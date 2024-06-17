@@ -1,0 +1,18 @@
+table {
+    font-family: "serif";
+    width: 100%;
+    border-spacing: 0;
+}
+th,
+td {
+    padding: 12px;
+}
+table th {
+    color: white;
+    text-align: start;
+    border-collapse: inherit;
+    background-color: #03a86f;
+}
+table tr:nth-child(even) {
+    background-color: #e8e9eb;
+}

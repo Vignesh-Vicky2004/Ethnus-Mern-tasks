@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+    <style>
+      body {
+        font-family: Arial, serif;
+        background-color: #a32a55;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem;
+        padding: 2rem;
+      }
+      table {
+        color: white;
+        padding: 3% 6%;
+        background-color: #751f3f;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        color: #303838;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" id="name" placeholder="your name" /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" id="mail" placeholder="your email" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" id="pass" /></td>
+        </tr>
+        <tr>
+          <td>Phone Number:</td>
+          <td><input type="text" id="no" /></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="others">Others:</label>
+            <input type="radio" id="others" name="gender" value="others" />
+          </td>
+        </tr>
+        <tr>
+          <td>Language:</td>
+          <td>
+            <select name="lang" id="lang">
+              <option value="" disabled selected>Select language</option>
+              <option value="tamil">Tamil</option>
+              <option value="eng">English</option>
+              <option value="hin">Hindi</option>
+              <option value="mal">Malayalam</option>
+              <option value="tel">Telugu</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Zip Code:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>About:</td>
+          <td>
+            <textarea placeholder="write about yourself" rows="4"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit">Register</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
