@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Date & Time</title>
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <button id="Date" onclick="date()">Show Date</button>
+      <p id="ans"></p>
+      <button id="Time" onclick="time()">Show Time</button>
+      <p id="result"></p>
+    </div>
+    <script>
+      function date() {
+        //     options = { month: "long" };
+        const d = new Date().getDate();
+        const m = new Date().toLocaleString("en-Us", { month: "long" });
+        const y = new Date().getFullYear();
+
+        document.getElementById("ans").innerText = d + "/" + m + "/" + y;
+
+        console.log(result);
+      }
+      function time() {
+        const d = new Date();
+        document.getElementById("result").innerText = d;
+        console.log(result);
+      }
+    </script>
+  </body>
+</html>

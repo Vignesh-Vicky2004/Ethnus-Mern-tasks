@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <style></style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <lable for="a">1st Number:</lable>
+        </td>
+        <td>
+          <input type="text" id="a" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <lable for="b">2nd Number:</lable>
+        </td>
+        <td>
+          <input type="text" id="b" />
+        </td>
+      </tr>
+    </table>
+    <div>
+      <button id="mul" onclick="Mul()">Multiply</button>
+      <button id="div" onclick="Div()">Divide</button>
+    </div>
+
+    <p id="result"></p>
+    <script>
+      function Mul() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let rev = a * b;
+        document.getElementById("result").innerText = "the result is\n" + rev;
+        console.log(rev);
+      }
+      function Div() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        if (b === 0) {
+          document.getElementById("result").innerText =
+            "Cannot divide by zero!";
+        } else {
+          let rev = a / b;
+          document.getElementById("result").innerText = "The result is\n" + rev;
+          console.log(rev);
+        }
+      }
+    </script>
+  </body>
+</html>
